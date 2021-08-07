@@ -1,0 +1,16 @@
+{
+  "name": "pixmall-server",
+  "version": "1.0.0",
+  "description": "YJS server for pixmall",
+  "author": "herve@camilab.co",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "y-websocket": "^1.3.16",
+    "yjs": "^13.5.12"
+  },
+  "scripts": {
+    "start": "HOST=$(grep PIXMALL_HOST .env | cut -d '=' -f2) PORT=1234 node ./node_modules/y-websocket/bin/server.js"
+  }
+}
